@@ -1,0 +1,22 @@
+{
+  "name": "google_searchresults_page",
+  "version": "1.0.0",
+  "description": "Odin project assignment (hard) build the google.com search results page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purcell-Kevingithub/google_searchresults_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purcell-Kevingithub/google_searchresults_page/issues"
+  },
+  "homepage": "https://github.com/Purcell-Kevingithub/google_searchresults_page#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
