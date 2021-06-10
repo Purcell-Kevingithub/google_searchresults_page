@@ -11,6 +11,7 @@ h3 {
 
 :root {
   --primary-color: #1a0dab;
+  --secondary-color: #4285f4;
 }
 
 html {
@@ -57,5 +58,60 @@ main {
 }
 
 footer {
-  background-color: blueviolet;
+  background-color: #fff;
+  margin: 10rem 40rem;
+  width: 500px;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  color: var(--secondary-color);
+}
+
+footer .google-img {
+  width: 100%;
+}
+
+footer .right-arrow {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+footer .pagination {
+  grid-row: 2/ 3;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+footer li {
+  padding-left: 1rem;
+}
+
+footer .next-text {
+  grid-row: 2/ 3;
+  grid-column: 2/3;
+}
+
+.arrow {
+  border: solid var(--secondary-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.cursor:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
 }
