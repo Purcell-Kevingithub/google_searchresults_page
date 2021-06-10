@@ -6,34 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google Search Results</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <img src="#" alt="logo" />
-      <form action="">
+      <div class="google-logo-container">
+        <img src="./googlelogo.png" alt="logo" class="google-logo" />
+      </div>
+      <form class="form">
         <input type="text" />
-        <button>X</button>
-        <button>Microphone</button>
-        <button><i>Magnifying Glass</i></button>
+        <ion-icon name="heart"></ion-icon>
+        <i class="fas fa-times close"></i>
+
+        <i class="fas fa-microphone microphone"></i>
+        <i class="fas fa-search search"></i>
       </form>
 
-      <div>
-        <button>Toggle Mode</button>
-        <button>Google Apps</button>
-        <button>Google Account</button>
-      </div>
-
-      <nav>
-        <li>All</li>
-        <li>Images</li>
-        <li>Videos</li>
-        <li>News</li>
-        <li>Shopping</li>
-        <li>More</li>
-        <li>Settings</li>
-        <li>Tools</li>
+      <nav class="nav">
+        <li class="cursor">All</li>
+        <li class="cursor">Images</li>
+        <li class="cursor">Videos</li>
+        <li class="cursor">News</li>
+        <li class="cursor">Shopping</li>
+        <li class="cursor">More</li>
+        <li class="cursor">Settings</li>
+        <li class="cursor">Tools</li>
       </nav>
     </header>
+    <hr class="hr" />
 
     <main>
       <div class="total">
@@ -76,14 +82,6 @@
         </p>
       </div>
       <div class="result">
-        <p class="link">https://www.catsthemusical.com</p>
-        <h2>Cats the Musical • Official Website and Tickets</h2>
-        <p class="description">
-          Andrew Lloyd Webber's record-breaking, award-winning, family favourite
-          West End and Broadway musical CATS - book your tickets today!
-        </p>
-      </div>
-      <div class="result">
         <p class="link">
           https://icatcare.org › advice › thinking-of-getting-a-cat
         </p>
@@ -94,25 +92,54 @@
           companionship, ...
         </p>
       </div>
+      <div class="result">
+        <p class="link">https://www.catsthemusical.com</p>
+        <h2>Cats the Musical • Official Website and Tickets</h2>
+        <p class="description">
+          Andrew Lloyd Webber's record-breaking, award-winning, family favourite
+          West End and Broadway musical CATS - book your tickets today!
+        </p>
+      </div>
+      <div class="result">
+        <p class="link">www.britannica.com › animal › cat</p>
+        <h2>cat | Breeds & Facts | Britannica</h2>
+        <p class="description">
+          May 19, 2021 — Cat, domesticated member of the family Felidae, order
+          Carnivora, and the smallest member of that family. Like all felids,
+          cats are characterized ...
+        </p>
+      </div>
+      <div class="result">
+        <p class="link">https://www.andrewlloydwebber.com › show › cats</p>
+        <h2>Cats - Andrew Lloyd Webber</h2>
+        <p class="description">
+          In 1983 the Broadway production became the recipient of seven Tony
+          awards including Best Musical, and ran for 18 years. Since its world
+          premiere, CATS has​ ...
+        </p>
+      </div>
     </main>
 
     <footer>
-        <img src="./googlepagination.png" alt="Gooooooooooogle image" class="google-img" />
-        <div class="right-arrow"><i class="arrow right cursor"></i></div>
-        <ul class="pagination">
-          <li class="cursor num">1</li>
-          <li class="cursor num">2</li>
-          <li class="cursor num">3</li>
-          <li class="cursor num">4</li>
-          <li class="cursor num">5</li>
-          <li class="cursor num">6</li>
-          <li class="cursor num">7</li>
-          <li class="cursor num">8</li>
-          <li class="cursor num">9</li>
-          <li class="cursor num">10</li>
-        </ul>
-        <p class="next-text cursor">Next</p>
-      </div>
+      <img
+        src="./googlepagination.png"
+        alt="Gooooooooooogle image"
+        class="google-img"
+      />
+      <div class="right-arrow"><i class="arrow right cursor"></i></div>
+      <ul class="pagination">
+        <li class="cursor num">1</li>
+        <li class="cursor num">2</li>
+        <li class="cursor num">3</li>
+        <li class="cursor num">4</li>
+        <li class="cursor num">5</li>
+        <li class="cursor num">6</li>
+        <li class="cursor num">7</li>
+        <li class="cursor num">8</li>
+        <li class="cursor num">9</li>
+        <li class="cursor num">10</li>
+      </ul>
+      <p class="next-text cursor">Next</p>
     </footer>
   </body>
 </html>

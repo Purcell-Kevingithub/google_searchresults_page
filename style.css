@@ -20,7 +20,90 @@ html {
 }
 
 header {
-  background-color: palegoldenrod;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 18rem 1fr 50% 1fr;
+  grid-template-rows: repeat(2, min-content);
+  font-size: 1.4rem;
+  padding: 3rem 0 1rem;
+}
+
+header .google-logo-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .google-logo {
+  width: auto;
+  max-height: 3rem;
+}
+
+header .form {
+  grid-column: 2 / 4;
+  grid-row: 1 /2;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+header .close {
+  margin-left: -13.5rem;
+  font-size: 2.5rem;
+  color: #70757a;
+  padding-right: 20px;
+  border-right: 1px solid #dadce0;
+  cursor: pointer;
+}
+
+header .microphone {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+header .search {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+header .form input {
+  max-width: 67rem;
+  width: 100%;
+  border-radius: 2rem;
+  border: transparent;
+  height: 100%;
+  outline: none;
+  font-size: 1.4rem;
+  text-indent: 3rem;
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+}
+
+header .nav {
+  grid-column: 2 / 4;
+  grid-row: 2/ 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+}
+
+header .nav li {
+  padding: 0 1rem;
+}
+
+.hr {
+  background-color: #dadce0;
+  border: 0;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 main {
@@ -59,7 +142,7 @@ main {
 
 footer {
   background-color: #fff;
-  margin: 10rem 40rem;
+  margin: 4rem 40rem;
   width: 500px;
   font-size: 1.4rem;
   display: grid;
