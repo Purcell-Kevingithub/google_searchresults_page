@@ -1,1 +1,1 @@
-Odin project assignment (hard) build the google.com search results page.
+Odin project assignment (hard option)-- build the results page for google.com
